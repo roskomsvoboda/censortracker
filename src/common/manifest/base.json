@@ -17,10 +17,7 @@
     "https://*/*"
   ],
   "background": {
-    "scripts": [
-      "background.min.js"
-    ],
-    "persistent": true
+    "page": "background.html"
   },
   "icons": {
     "16": "images/icons/16x16/default.png",

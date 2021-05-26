@@ -107,6 +107,14 @@ const webpackConfig = {
     }),
     new HTMLWebpackPlugin({
       title: 'Censor Tracker',
+      filename: 'background.html',
+      template: 'src/common/pages/background.html',
+      inject: true,
+      chunks: ['background'],
+      meta: contentSecurityPolicy,
+    }),
+    new HTMLWebpackPlugin({
+      title: 'Censor Tracker',
       filename: 'popup.html',
       template: 'src/common/pages/popup.html',
       inject: true,
